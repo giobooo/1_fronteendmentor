@@ -35,8 +35,8 @@ Want some support on the challenge? [Join our Slack community](https://www.front
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/giobooo/giovannibrienzaftm/tree/main/002_interactive-rating-component-main)
+- Live Site URL: [Add live site URL here](https://superb-mochi-80a71a.netlify.app/)
 
 ## My process
 
