@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        color: white;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      body {
+        font-family: "Overpass", sans-serif;
+        inset: 0;
+        position: absolute;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: hsl(216, 12%, 8%);
+      }
+      .card {
+        margin: 1rem;
+        background-color: hsl(213, 19%, 18%);
+        max-width: 380px;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 2rem;
+        position: relative;
+      }
+      .card figure {
+        background-color: hsl(213, 19%, 22%);
+        border-radius: 999px;
+        margin: 0;
+        padding: 0;
+        display: block;
+        padding: 1rem;
+      }
+      .card img {
+        padding: 0;
+        margin: 0;
+        display: block;
+      }
+      h1 {
+        color: white;
+        margin-bottom: 0;
+      }
+      p {
+        color: hsl(217, 12%, 63%);
+        margin-bottom: 2rem;
+        line-height: 1.5rem;
+      }
+      input {
+        display: none;
+      }
+
+      .stars-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        gap: 0.5rem;
+        margin-bottom: 2rem;
+      }
+      label {
+        border-radius: 999px;
+        background-color: hsl(213, 19%, 22%);
+        display: inline-block;
+        height: 48px;
+        width: 48px;
+        text-align: center;
+        vertical-align: middle;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: hsl(217, 12%, 63%);
+      }
+      button {
+        width: 100%;
+        background-color: hsl(25, 97%, 53%);
+        border: none;
+        color: white;
+        padding: 1rem 0;
+        border-radius: 999px;
+        letter-spacing: 0.2rem;
+      }
+      button:hover {
+        background-color: white;
+        color: hsl(25, 97%, 53%);
+      }
+      label:hover {
+        background-color: hsl(216, 12%, 54%);
+        color: black;
+      }
+      input:checked + label {
+        background-color: hsl(25, 97%, 53%);
+        color: white;
+      }
+
+      form {
+        width: 100%;
+      }
+
+      .thank-you {
+        position: absolute;
+        inset: 0;
+        padding: 2rem;
+        background-color: hsl(213, 19%, 18%);
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: none;
+      }
+      .thank-you img {
+        max-width: 150px;
+      }
+      .you-selected-span {
+        margin-top: 2rem;
+        background-color: hsl(213, 19%, 22%);
+        padding: 0.5rem 1rem;
+        border-radius: 2rem;
+        color: hsl(25, 97%, 53%);
+      }
+      .thank-you p {
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 0;
+      }
+
+      @media screen and (max-width: 350px) {
+        label {
+          height: 40px;
+          width: 40px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="card">
+        <div class="thank-you">
+          <img
+            src="./images/illustration-thank-you.svg"
+            alt="thank you image"
+          />
+          <span class="you-selected-span">You selected 4 out of 5</span>
+          <h1>Thank you!</h1>
+          <p>
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
+        </div>
+        <figure>
+          <img src="./images/icon-star.svg" alt="star icon" />
+        </figure>
+        <h1>How did we do?</h1>
+        <p>
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <form>
+          <div class="stars-container">
+            <input type="radio" id="1" name="stars" value="1" />
+            <label for="1" name="stars">1</label>
+            <input type="radio" id="2" name="stars" value="2" />
+            <label for="2" name="stars">2</label>
+            <input type="radio" id="3" name="stars" value="3" />
+            <label for="3" name="stars">3</label>
+            <input type="radio" id="4" name="stars" value="4" />
+            <label for="4" name="stars">4</label>
+            <input type="radio" id="5" name="stars" value="5" />
+            <label for="5" name="stars">5</label>
+          </div>
+          <button type="submit">SUBMIT</button>
+        </form>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        rel="noopener"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.giobrienza.com" rel="noopener" target="_blank"
+        >Giovanni Brienza</a
+      >.
+    </div>
+  </body>
+  <script>
+    const ratingSpan = document.querySelector(".you-selected-span");
+    const submitButton = document.getElementsByTagName("button").item(0);
+    submitButton.addEventListener("click", function (e) {
+      e.preventDefault();
+      const inputs = document.querySelectorAll("input");
+      console.log(inputs);
+      inputs.forEach((element) => {
+        if (element.checked) {
+          console.log(element);
+          ratingSpan.innerHTML = `You selected ${element.value} out of 5`;
+          console.log(element.value);
+
+          document.querySelector(".thank-you").style.display = "flex";
+        }
+      });
+    });
+  </script>
+</html>
