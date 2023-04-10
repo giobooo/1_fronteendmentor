@@ -50,7 +50,7 @@ main {
   display: flex;
   flex-direction: row;
   gap: 2rem;
-  padding-bottom: 4rem;
+  padding-bottom: 2.5rem;
   border-bottom: 1px solid hsl(0, 0%, 86%);
   padding-right: 6rem;
   align-items: flex-start;
@@ -84,6 +84,13 @@ button {
   font-size: xx-large;
   width: 160px;
 }
+
+.input-fields-container input[type="number"]::-webkit-inner-spin-button,
+.input-fields-container input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .fields-container input:focus {
   outline: 1px solid hsl(259, 100%, 65%);
 }
@@ -93,7 +100,7 @@ button {
   margin-top: 0.3rem;
 }
 .results-container {
-  margin-top: 4rem;
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   font-weight: 800;
@@ -145,11 +152,7 @@ button {
     font-size: 1.25rem;
     padding: 0.75rem 1rem;
   }
-  .input-fields-container input[type="number"]::-webkit-inner-spin-button,
-  .input-fields-container input[type="number"]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
+
   .error-message {
     font-size: small;
   }
