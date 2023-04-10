@@ -23,25 +23,33 @@
         <form>
           <div class="input-fields-container">
             <div class="fields-container day-i">
-              <label>DAY</label>
-              <input type="number" title="day" placeholder="DD" maxlength="2" />
+              <label for="day">DAY</label>
+              <input
+                type="number"
+                title="day"
+                placeholder="DD"
+                maxlength="2"
+                name="day"
+              />
               <span class="error-message"></span>
             </div>
             <div class="fields-container month-i">
-              <label>MONTH</label>
+              <label for="month">MONTH</label>
               <input
                 type="number"
                 title="month"
+                name="month"
                 placeholder="MM"
                 maxlength="2"
               />
               <span class="error-message"></span>
             </div>
             <div class="fields-container year-i">
-              <label>YEAR</label>
+              <label for="year">YEAR</label>
               <input
                 type="number"
                 title="year"
+                name="year"
                 placeholder="YYYY"
                 maxlength="4"
               />
