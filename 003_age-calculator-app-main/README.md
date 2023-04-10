@@ -51,6 +51,6 @@ Users should be able to:
 
 ## Author
 
-- Website - [Add your name here](https://www.giobrienza.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/giobooo)
-- Twitter - [@yourusername](https://www.twitter.com/giobooo)
+- Website - [Giovanni Brienza Website](https://www.giobrienza.com)
+- Frontend Mentor - [@giobooo](https://www.frontendmentor.io/profile/giobooo)
+- Twitter - [@giobooo](https://www.twitter.com/giobooo)
