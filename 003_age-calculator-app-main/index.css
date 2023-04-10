@@ -7,13 +7,20 @@
   color: hsl(228, 45%, 44%);
 }
 
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Poppins", sans-serif;
-  inset: 0;
-  position: absolute;
+  min-height: 100vh;
   background-color: hsl(0, 0%, 86%);
   display: flex;
+  flex-direction: column;
+  gap: 4rem;
   justify-content: center;
+  align-items: center;
 }
 
 main {
@@ -27,8 +34,16 @@ main {
 .app-container {
   width: 840px;
   padding: 4rem;
-  border-radius: 1rem 1rem 13rem 1rem;
+  border-radius: 1.5rem 1.5rem 12.5rem 1.5rem;
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.app-container form {
+  display: flex;
+  flex-direction: row;
 }
 
 .input-fields-container {
@@ -37,16 +52,18 @@ main {
   gap: 2rem;
   padding-bottom: 4rem;
   border-bottom: 1px solid hsl(0, 0%, 86%);
+  padding-right: 6rem;
+  align-items: flex-start;
 }
 
 button {
-  float: right;
   background-color: hsl(259, 100%, 65%);
   border-radius: 999px;
   border: none;
   width: 96px;
   height: 96px;
-  margin-top: -48px;
+  margin-bottom: -48px;
+  align-self: flex-end;
 }
 
 .fields-container {
@@ -57,6 +74,7 @@ button {
 .fields-container label {
   color: hsl(0, 1%, 44%);
   font-size: 0.9rem;
+  letter-spacing: 0.25em;
 }
 .fields-container input {
   padding: 1rem;
@@ -88,4 +106,61 @@ button {
 }
 .result-number > span {
   color: black;
+}
+
+@media screen and (max-width: 860px) {
+  main {
+    padding: 1rem;
+  }
+  .app-container {
+    width: unset;
+    min-width: 343px;
+    padding: 3rem 1.5rem;
+    border-radius: 1.5rem 1.5rem 6.25rem 1.5rem;
+  }
+  .app-container form {
+    flex-direction: column;
+  }
+  button {
+    align-self: center;
+    margin-bottom: auto;
+    margin-top: -32px;
+    width: 64px;
+    height: 64px;
+  }
+  button img {
+    height: 20px;
+    width: 20px;
+  }
+  .input-fields-container {
+    padding: 0;
+    padding-bottom: 4rem;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .input-fields-container input {
+    width: 100%;
+    flex: 1 1;
+    font-size: 1.25rem;
+    padding: 0.75rem 1rem;
+  }
+  .input-fields-container input[type="number"]::-webkit-inner-spin-button,
+  .input-fields-container input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  .error-message {
+    font-size: small;
+  }
+  .input-fields-container label {
+    font-size: small;
+  }
+  .results-container {
+    margin-top: 2rem;
+  }
+  .result-number {
+    font-size: 3.4rem;
+    line-height: 110%;
+  }
 }
