@@ -31,12 +31,6 @@
   box-sizing: border-box;
 }
 
-header,
-footer {
-  max-width: 1111px;
-  width: -webkit-fill-available;
-}
-
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
   background-color: #fff7f0;
@@ -156,6 +150,7 @@ main {
 header {
   margin-top: 2.12rem;
   margin-bottom: 5rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -432,6 +427,7 @@ footer {
   flex-direction: column;
   gap: 3.5rem;
   margin-bottom: 2.12rem;
+  width: 100%;
 }
 
 .top-footer {
@@ -487,6 +483,10 @@ footer {
   section.me-section {
     margin-left: 2.4375rem;
     margin-right: 2.4375rem;
+  }
+  header,
+  footer {
+    width: -webkit-fill-available;
   }
   main {
     align-items: stretch;
