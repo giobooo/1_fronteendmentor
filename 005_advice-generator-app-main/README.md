@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github](https://your-solution-url.com)
-- Live Site URL: [Github Pages](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/giobooo/giovannibrienzaftm/tree/main/005_advice-generator-app-main)
+- Live Site URL: [Github Pages](https://giobooo.github.io/giovannibrienzaftm/005_advice-generator-app-main/)
 
 ## My process
 
