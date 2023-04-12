@@ -324,6 +324,9 @@ header p {
   gap: 2rem;
   align-items: flex-start;
 }
+.me-section p {
+  color: #7a746e;
+}
 
 .largeHeading {
   font-size: 3.5rem;
@@ -438,7 +441,7 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 4rem;
+  padding: 5rem 4rem;
 }
 .top-footer div {
   max-width: 33.75rem;
