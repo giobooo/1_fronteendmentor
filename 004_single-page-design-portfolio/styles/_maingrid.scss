@@ -1,0 +1,73 @@
+@import "./vars.scss";
+
+.grid-section {
+  margin-bottom: 5.5rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1.5rem;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "gr-d gr-d uiux apps photo photo"
+    "gr-d gr-d illustr illustr motion motion";
+  height: 22.75rem;
+  width: 1111px;
+  transition: all 0.5s ease-in-out;
+  div {
+    position: relative;
+    border-radius: 0.5rem;
+  }
+  img {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+  }
+  span {
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    color: $light-color;
+  }
+}
+
+.gr-d {
+  grid-area: gr-d;
+  background-color: $purple-base;
+
+  img {
+    height: 8rem;
+    margin-right: 0;
+  }
+}
+
+.illustr {
+  grid-area: illustr;
+  background-color: $red-base;
+  img {
+    height: 4rem;
+  }
+}
+
+.uiux {
+  grid-area: uiux;
+  background-color: $orange-base;
+}
+
+.apps {
+  grid-area: apps;
+  background-color: $pink-base;
+}
+
+.photo {
+  grid-area: photo;
+  background-color: $teal-base;
+}
+
+.motion {
+  grid-area: motion;
+  background-color: $purple-dark;
+}

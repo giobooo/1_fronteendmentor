@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Single-page design portfolio</title>
+    <link href="./styles/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="free-consultation-container">
+        <img src="./assets/logo.svg" alt="" />
+        <button type="button" class="black-button">Free Consultation</button>
+      </div>
+      <h1 class="largeHeading">Design solutions made easy</h1>
+      <p class="normalText">
+        With over ten years of experience in various design disciplines, I’m
+        your one-stop shop for your design needs.
+      </p>
+    </header>
+
+    <main>
+      <section class="grid-section max-width">
+        <div class="grid-container">
+          <div class="gr-d">
+            <span>Graphic design</span>
+            <img src="./assets/pattern-graphic-design.svg" alt="" />
+          </div>
+          <div class="illustr">
+            <img src="./assets/pattern-illustrations.svg" alt="" />
+            <span>Illustrations</span>
+          </div>
+          <div class="uiux">
+            <img src="./assets/pattern-ui-ux.svg" alt="" />
+            <span>UI/UX</span>
+          </div>
+          <div class="apps">
+            <img src="./assets/pattern-apps.svg" alt="" />
+            <span>Apps</span>
+          </div>
+          <div class="photo">
+            <img src="./assets/pattern-photography.svg" alt="" />
+            <span>Photography</span>
+          </div>
+          <div class="motion">
+            <img src="./assets/pattern-motion-graphics.svg" alt="" />
+            <span>Motion Graphics</span>
+          </div>
+        </div>
+      </section>
+      <section class="me-section max-width">
+        <img src="./assets/image-amy.webp" alt="Amy" />
+        <div>
+          <h2 class="mediumHeading">
+            I’m Amy, and I’d love to work on your next project
+          </h2>
+          <p class="normalText">
+            I love working with others to create beautiful design solutions.
+            I’ve designed everything from brand illustrations to complete mobile
+            apps. I’m also handy with a camera!
+          </p>
+          <button class="orange-button">Free Consultation</button>
+        </div>
+      </section>
+      <section class="my-work-section">
+        <h3 class="smallHeading">My Work</h3>
+        <div class="image-slider">
+          <img src="./assets/image-slide-1.jpg" alt="" />
+          <img src="./assets/image-slide-2.jpg" alt="" />
+          <img src="./assets/image-slide-3.jpg" alt="" />
+          <img src="./assets/image-slide-4.jpg" alt="" />
+          <img src="./assets/image-slide-5.jpg" alt="" />
+        </div>
+        <div class="slider-buttons-container">
+          <button
+            type="button"
+            class="slider-button"
+            title="slide left"
+            onclick="clickSlideLeft()"
+          >
+            <img src="./assets/icon-arrow-left.svg" alt="" />
+          </button>
+          <button
+            type="button"
+            class="slider-button"
+            title="slide right"
+            onclick="clickSlideRight()"
+          >
+            <img src="./assets/icon-arrow-right.svg" alt="" />
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="max-width">
+      <section class="top-footer">
+        <div>
+          <h3 class="mediumHeading">Book a call with me</h3>
+          <p class="normalText">
+            I’d love to have a chat to see how I can help you. The best first
+            step is for us to discuss your project during a free consultation.
+            Then we can move forward from there.
+          </p>
+        </div>
+        <button type="button" class="orange-button">Free Consultation</button>
+      </section>
+      <section class="bottom-footer">
+        <div class="free-consultation-container">
+          <img src="./assets/logo.svg" alt="" />
+          <button type="button" class="black-button">Free Consultation</button>
+        </div>
+      </section>
+    </footer>
+    <script src="./index.js" type="text/javascript"></script>
+  </body>
+</html>

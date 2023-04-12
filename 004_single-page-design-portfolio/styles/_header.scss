@@ -1,0 +1,36 @@
+@import "./vars.scss";
+
+header {
+  h1 {
+    margin-top: 4.125rem;
+    margin-bottom: 1.4375rem;
+    max-width: 47rem;
+  }
+  p {
+    text-align: center;
+    color: $gray-base;
+    max-width: 47rem;
+    padding: 0 0.6875rem;
+  }
+  margin-top: 2.12rem;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.free-consultation-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  button {
+    margin: 0.25rem 0;
+  }
+  img {
+    height: 4rem;
+    width: 4rem;
+  }
+}

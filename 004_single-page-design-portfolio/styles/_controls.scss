@@ -1,0 +1,21 @@
+@import "./vars.scss";
+
+.black-button,
+.orange-button {
+  background-color: #030303;
+  color: #fff7f0;
+  border-radius: 999px;
+  padding: 1.25rem 3rem;
+  border: none;
+  height: auto;
+  cursor: pointer;
+}
+.orange-button {
+  background-color: $red-base;
+}
+.black-button:hover {
+  background-color: $purple-base;
+}
+.orange-button:hover {
+  background-color: $orange-base;
+}

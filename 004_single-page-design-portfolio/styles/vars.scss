@@ -1,0 +1,39 @@
+$purple-base: #755cde;
+$orange-base: #f6a560;
+$pink-base: #f39e9e;
+$red-base: #eb7565;
+$teal-base: #61c4b7;
+$purple-dark: #552049;
+$black-base: #030303;
+$gray-base: #7a746e;
+$light-color: #fff7f0;
+$normal-font-size: 1.125rem;
+$line-normal: 1.75rem;
+$heading-l: 3.5rem;
+$line-l: 4.375rem;
+$heading-m: 2.5rem;
+$line-m: 3.1875rem;
+$heading-s: 2rem;
+$line-s: 2.5rem;
+
+.largeHeading {
+  font-size: $heading-l;
+  line-height: $line-l;
+  color: $black-base;
+  text-align: center;
+}
+.mediumHeading {
+  font-size: $heading-m;
+  line-height: $line-m;
+}
+.smallHeading {
+  font-size: $heading-s;
+  line-height: $line-s;
+}
+.normalText {
+  font-size: $normal-font-size;
+  line-height: $line-normal;
+}
+.max-width {
+  max-width: 1111px;
+}

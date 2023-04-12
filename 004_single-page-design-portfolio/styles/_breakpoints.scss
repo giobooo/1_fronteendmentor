@@ -1,0 +1,124 @@
+@import "./vars.scss";
+
+@media screen and (max-width: 1170px) {
+  header,
+  footer,
+  section.grid-section,
+  section.me-section {
+    margin-left: 2.4375rem;
+    margin-right: 2.4375rem;
+  }
+
+  main {
+    align-items: stretch;
+  }
+
+  .grid-section {
+    margin-bottom: 7.5rem;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 11.375rem);
+    grid-template-areas:
+      "gr-d gr-d uiux apps"
+      "gr-d gr-d illustr illustr"
+      "photo photo motion motion";
+    height: auto;
+    width: auto;
+  }
+
+  .me-section {
+    gap: 4.3125rem;
+    margin-bottom: 7.5rem;
+    img {
+      height: 22.75rem;
+      width: 22.75rem;
+      margin-left: -5.1875rem;
+    }
+    h2 {
+      font-size: $heading-s;
+      line-height: $line-s;
+    }
+  }
+
+  .top-footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.625rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header,
+  footer,
+  section.grid-section,
+  section.me-section {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  footer {
+    margin-bottom: 1rem;
+  }
+
+  .grid-section,
+  .me-section,
+  .my-work.me-section {
+    margin-bottom: 6.25rem;
+  }
+
+  .free-consultation-container {
+    img {
+      height: 3rem;
+      width: 3rem;
+    }
+  }
+
+  .me-section {
+    flex-direction: column;
+    justify-items: center;
+    text-align: center;
+    gap: 2.5rem;
+    img {
+      margin-left: 0;
+      height: 18.75rem;
+      width: 18.75rem;
+    }
+    div {
+      align-items: center;
+    }
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, minmax(0px, 1fr));
+    grid-template-rows: repeat(6, 9.875rem);
+    grid-template-areas:
+      "gr-d gr-d"
+      "gr-d gr-d"
+      "uiux apps"
+      "illustr illustr"
+      "photo photo"
+      "motion motion";
+    height: auto;
+
+    width: auto;
+  }
+
+  .image-slider {
+    img {
+      height: 11.25rem;
+      width: 16.875rem;
+    }
+  }
+  .top-footer {
+    h3 {
+      font-size: 1.75rem;
+      line-height: $line-s;
+    }
+    p {
+      font-size: 1rem;
+    }
+    padding: 3rem 1.5rem;
+  }
+}
