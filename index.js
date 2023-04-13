@@ -1,4 +1,4 @@
-function appendNewChallange(name, link, screen, date) {
+function appendNewChallange(name, link, screen, date, external) {
   let container = document.createElement("div");
   container.classList.add("card");
 
@@ -17,8 +17,15 @@ function appendNewChallange(name, link, screen, date) {
   let challengeDate = document.createElement("span");
   challengeDate.innerHTML = date;
 
+  let challengeLink = document.createElement("a");
+  challengeLink.innerHTML = "View original challenge on Frontend Mentor";
+  challengeLink.href = external;
+  challengeLink.target = "_blank";
+  challengeLink.rel = "noopener";
+
   container.appendChild(aLinkContainer);
   container.appendChild(challengeDate);
+  container.appendChild(challengeLink);
   aLinkContainer.appendChild(challengeImage);
   aLinkContainer.appendChild(challengeTitle);
 
@@ -33,7 +40,13 @@ async function readAppendAllChallenges() {
     });
 
   list.challenges.forEach((item) => {
-    appendNewChallange(item.name, item.href, item.screenshot, item.date);
+    appendNewChallange(
+      item.name,
+      item.href,
+      item.screenshot,
+      item.date,
+      item.external
+    );
   });
 }
 

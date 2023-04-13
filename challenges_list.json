@@ -3,30 +3,35 @@
     {
       "name": "QR Code Component",
       "href": "./001_Frontend-Mentor-QR/index.html",
+      "external": "https://www.frontendmentor.io/solutions/qr-code-html-and-css-only-UHVM2NSXzX",
       "screenshot": "./001_Frontend-Mentor-QR/screenshot.jpg",
       "date": "06/04/2023"
     },
     {
       "name": "Interactive Rating Component",
       "href": "./002_interactive-rating-component-main/index.html",
+      "external": "https://www.frontendmentor.io/solutions/rating-component-html-css-js-rW7LzwX5MO",
       "screenshot": "./002_interactive-rating-component-main/screenshot.jpg",
       "date": "07/04/2023"
     },
     {
       "name": "Age Calculator App",
       "href": "./003_age-calculator-app-main/index.html",
+      "external": "https://www.frontendmentor.io/solutions/responsive-age-calculator-app-Z6NZWa2B5x",
       "screenshot": "./003_age-calculator-app-main/screenshot.jpg",
       "date": "10/04/2023"
     },
     {
       "name": "Single Page Design Portfolio",
       "href": "./004_single-page-design-portfolio/index.html",
+      "external": "https://www.frontendmentor.io/solutions/responsive-portfolio-with-working-slider-Mio1NLmZt0",
       "screenshot": "./004_single-page-design-portfolio/screenshot.jpg",
       "date": "12/04/2023"
     },
     {
       "name": "Advice Generator App",
       "href": "./005_advice-generator-app-main/index.html",
+      "external": "https://www.frontendmentor.io/solutions/random-advice-generator-responsive-P7A1mi96-X",
       "screenshot": "./005_advice-generator-app-main/screenshot.jpg",
       "date": "12/04/2023"
     }

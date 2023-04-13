@@ -72,6 +72,10 @@ h2 {
   text-decoration: none;
   color: black;
 }
+.card a:last-child {
+  margin-top: 1rem;
+  text-decoration: underline;
+}
 
 a:visited {
   color: black;
