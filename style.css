@@ -47,11 +47,12 @@ h2 {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 18.125rem;
   background-color: white;
   padding: 1rem;
-  display: grid;
-  justify-content: center;
   border: 1px solid lightgray;
   border-radius: 0.5rem;
   -webkit-box-shadow: 4px 4px 17px 0px rgba(0, 0, 0, 0.26);
