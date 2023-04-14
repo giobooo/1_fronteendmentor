@@ -30,6 +30,10 @@ h1 {
   margin-bottom: 1.5rem;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 .result-box {
   height: 5rem;
   background-color: $ds-dark-gray;
@@ -48,8 +52,20 @@ h1 {
     font-family: inherit;
   }
   button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     background-color: transparent;
     border: none;
+    font-family: inherit;
+    cursor: pointer;
+
+    .copied-message {
+      font-family: inherit;
+      margin-right: 1rem;
+      font-size: 1.125rem;
+      color: $ds-neon-green;
+    }
   }
 }
 
@@ -63,6 +79,12 @@ h1 {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
   }
 
   #length-selector {
