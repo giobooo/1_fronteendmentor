@@ -34,6 +34,13 @@
       "external": "https://www.frontendmentor.io/solutions/random-advice-generator-responsive-P7A1mi96-X",
       "screenshot": "./005_advice-generator-app-main/screenshot.jpg",
       "date": "12/04/2023"
+    },
+    {
+      "name": "Password Generator App",
+      "href": "./006_password-generator-app/index.html",
+      "external": "https://www.frontendmentor.io/solutions/random-advice-generator-responsive-P7A1mi96-X",
+      "screenshot": "./006_password-generator-app/screenshot.jpg",
+      "date": "14/04/2023"
     }
   ]
 }
