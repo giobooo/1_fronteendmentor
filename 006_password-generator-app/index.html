@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <title>Frontend Mentor | Password generator app</title>
+  </head>
+  <body>
+    <main>
+      <h1>Password Generator</h1>
+      <div class="result-box">
+        <input
+          disabled="true"
+          type="text"
+          placeholder="P4$5W0rD!"
+          class="generated-password"
+        />
+        <button
+          type="button"
+          title="copy to clipboard"
+          class="copy-button"
+          onclick="copyToClipboard()"
+        >
+          <span class="copied-message hidden">COPIED</span>
+          <img src="./assets/images/icon-copy.svg" alt="copy-image" />
+        </button>
+      </div>
+      <form class="settings-box">
+        <div class="character-length-container">
+          <label for="length-selector">Character Length</label>
+          <span class="length-value">10</span>
+        </div>
+        <input
+          type="range"
+          id="length-selector"
+          min="5"
+          max="20"
+          value="10"
+          oninput="updateLength()"
+        />
+        <div class="check-group">
+          <div class="check-b">
+            <input class="css-checkbox" type="checkbox" id="incl-UC" />
+            <label for="incl-UC">Include Uppercase Letters</label>
+          </div>
+          <div class="check-b">
+            <input class="css-checkbox" type="checkbox" id="incl-LC" />
+            <label for="incl-LC">Include Lowercase Letters</label>
+          </div>
+
+          <div class="check-b">
+            <input class="css-checkbox" type="checkbox" id="incl-NUM" />
+            <label for="incl-NUM">Include Numbers</label>
+          </div>
+
+          <div class="check-b">
+            <input class="css-checkbox" type="checkbox" id="incl-SYM" />
+            <label for="incl-SYM">Include Symbols</label>
+          </div>
+        </div>
+        <div class="strength-box">
+          <span>STRENGTH</span>
+          <div class="rating-container">
+            <span>MEDIUM</span>
+            <div class="rating-boxes-container">
+              <div class="rating"></div>
+              <div class="rating"></div>
+              <div class="rating"></div>
+              <div class="rating"></div>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="generate-button" onclick="clickGenerate()">
+          GENERATE
+          <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill="#24232C"
+              d="m5.106 12 6-6-6-6-1.265 1.265 3.841 3.84H.001v1.79h7.681l-3.841 3.84z"
+            />
+          </svg>
+        </button>
+      </form>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

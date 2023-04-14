@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap");
+@import "./vars.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $ds-very-dark-gray;
+  inset: 0;
+  position: absolute;
+  font-family: "JetBrains Mono", monospace;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 33.75rem;
+  font-size: 1.125rem;
+}
+
+h1 {
+  color: $ds-gray;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.result-box {
+  background-color: $ds-dark-gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  margin-bottom: 1.5rem;
+
+  .generated-password {
+    font-size: 1.5rem;
+    width: 300px;
+    color: $ds-almost-white;
+    background-color: transparent;
+    border: none;
+    font-family: inherit;
+  }
+  button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+
+    .copied-message {
+      font-family: inherit;
+      margin-right: 1rem;
+      font-size: 1.125rem;
+      color: $ds-neon-green;
+    }
+  }
+}
+
+.settings-box {
+  color: $ds-almost-white;
+  background-color: $ds-dark-gray;
+  padding: 1.5rem 2rem;
+
+  .character-length-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    div {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  #length-selector {
+    display: block;
+    width: 100%;
+    margin: 1rem 0 2rem 0;
+    cursor: pointer;
+    accent-color: $ds-neon-green;
+  }
+
+  .length-value {
+    font-size: 2rem;
+    color: $ds-neon-green;
+  }
+}
+
+.check-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+
+  input {
+    height: 1.25rem;
+    width: 1.25rem;
+    accent-color: $ds-neon-green;
+    background: transparent !important;
+  }
+  .check-b {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@import "./checkbox.scss";
+
+.strength-box {
+  background-color: $ds-very-dark-gray;
+  margin: 2rem 0;
+  padding: 1.25rem 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.rating-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  .rating-boxes-container {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin-left: 0.9688rem;
+
+    .rating {
+      height: 1.75rem;
+      width: 0.625rem;
+      border: 2px solid $ds-almost-white;
+    }
+    .rating-empty {
+      border: 2px solid $ds-almost-white;
+      background-color: transparent;
+    }
+    .rating-x-low {
+      background-color: $ds-red;
+      border: 2px solid $ds-red;
+    }
+    .rating-low {
+      background-color: $ds-orange;
+      border: 2px solid $ds-orange;
+    }
+    .rating-medium {
+      background-color: $ds-yellow;
+      border: 2px solid $ds-yellow;
+    }
+    .rating-full {
+      background-color: $ds-neon-green;
+      border: 2px solid $ds-neon-green;
+    }
+  }
+}
+
+.generate-button {
+  width: 100%;
+  background-color: $ds-neon-green;
+  border: none;
+  font-size: 1.125rem;
+  padding: 1.25rem;
+  cursor: pointer;
+  border: 2px solid $ds-neon-green;
+  font-family: "JetBrains Mono", monospace;
+  svg {
+    margin-left: 1.5rem;
+  }
+}
+.generate-button:hover {
+  background-color: transparent;
+  border: 2px solid $ds-neon-green;
+  color: $ds-neon-green;
+  path {
+    fill: $ds-neon-green;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    width: auto;
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 1rem;
+  }
+  .settings-box .length-value {
+    font-size: 1.5rem;
+  }
+  .result-box {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    .generated-password {
+      font-size: 1rem;
+      width: 200px;
+    }
+  }
+  .settings-box {
+    padding: 1rem;
+  }
+  .strength-box {
+    margin-bottom: 1rem;
+  }
+}
