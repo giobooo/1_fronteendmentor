@@ -49,6 +49,81 @@ function generateNewPassword() {
   }
 
   document.querySelector(".generated-password").value = randomString;
+  updatePwdRatingDOM(updateScore());
+}
+
+function updateScore() {
+  const pswLength = document.getElementById("length-selector").value;
+  const UC = document.getElementById("incl-UC").checked;
+  const LC = document.getElementById("incl-LC").checked;
+  const NUM = document.getElementById("incl-NUM").checked;
+  const SYM = document.getElementById("incl-SYM").checked;
+
+  let score = 0;
+
+  if (pswLength < 8) {
+    score = 1;
+  }
+  if (pswLength >= 8) {
+    if (UC) {
+      score++;
+    }
+    if (LC) {
+      score++;
+    }
+    if (NUM) {
+      score++;
+    }
+    if (SYM) {
+      score++;
+    }
+    if (score > 4) {
+      score = 4;
+    }
+  }
+
+  return score;
+}
+
+function updatePwdRatingDOM(score) {
+  const items = document.querySelectorAll(".rating");
+  console.log(score);
+
+  items.forEach((element) => {
+    element.classList.remove("rating-x-low");
+    element.classList.remove("rating-full");
+    element.classList.remove("rating-empty");
+    element.classList.remove("rating-medium");
+    element.classList.remove("rating-low");
+  });
+
+  if (score === 0) {
+    items.forEach((element) => {
+      element.classList.add("rating-empty");
+    });
+  }
+
+  if (score === 1) {
+    for (let index = 0; index < 1; index++) {
+      items.item(index).classList.add("rating-x-low");
+    }
+    document.querySelector(".rating-container span").innerHTML = "TOO WEAK!";
+  } else if (score === 2) {
+    for (let index = 0; index < 2; index++) {
+      items.item(index).classList.add("rating-low");
+    }
+    document.querySelector(".rating-container span").innerHTML = "WEAK";
+  } else if (score === 3) {
+    for (let index = 0; index < 3; index++) {
+      items.item(index).classList.add("rating-medium");
+    }
+    document.querySelector(".rating-container span").innerHTML = "MEDIUM";
+  } else if (score === 4) {
+    for (let index = 0; index < 4; index++) {
+      items.item(index).classList.add("rating-full");
+    }
+    document.querySelector(".rating-container span").innerHTML = "STRONG";
+  }
 }
 
 //fishes-yates shuffle to shuffle the string

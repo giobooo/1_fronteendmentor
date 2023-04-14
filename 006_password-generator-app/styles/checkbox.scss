@@ -9,6 +9,7 @@
   margin: -1px;
   padding: 0;
   border: 0;
+  font-size: inherit;
 }
 #inputPreview {
   display: flex;
@@ -17,7 +18,7 @@
 }
 .css-checkbox + label {
   position: relative;
-  font-size: 16px;
+  font-size: 1rem;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
