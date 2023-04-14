@@ -64,6 +64,9 @@ h1 {
   font-size: 1.125rem;
   color: #a4ffaf;
 }
+.result-box button:hover path {
+  fill: #e6e5ea;
+}
 
 .settings-box {
   color: #e6e5ea;
