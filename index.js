@@ -36,10 +36,10 @@ async function readAppendAllChallenges() {
   const list = await fetch("./challenges_list.json")
     .then((response) => response.json())
     .then((json) => {
-      return json;
+      return json.challenges;
     });
 
-  list.challenges.forEach((item) => {
+  list.reverse().forEach((item) => {
     appendNewChallange(
       item.name,
       item.href,
