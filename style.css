@@ -66,16 +66,22 @@ h2 {
   transform: scale(1.05);
 }
 
-.card a {
+.card a:first-child {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-decoration: none;
   color: black;
 }
-.card a:last-child {
+.challenge-link {
   margin-top: 1rem;
   text-decoration: underline;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  font-size: small;
 }
 
 a:visited {
@@ -89,13 +95,22 @@ a:visited {
   font-size: x-large;
 }
 .card span {
+  font-size: small;
 }
 
-.card img {
+.card > a:first-child > img {
   width: 16rem;
   height: 9rem;
   object-fit: cover;
   margin-bottom: 2rem;
+  border-radius: 0.3rem;
+}
+
+.challenge-link > img {
+  height: 24px;
+  width: 24px;
+  filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.3));
+  float: right;
 }
 
 @media screen and (max-width: 960px) {

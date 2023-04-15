@@ -15,13 +15,20 @@ function appendNewChallange(name, link, screen, date, external) {
   challengeTitle.innerHTML = name;
 
   let challengeDate = document.createElement("span");
-  challengeDate.innerHTML = date;
+  challengeDate.innerHTML = "Completed on: " + date;
 
   let challengeLink = document.createElement("a");
-  challengeLink.innerHTML = "View original challenge on Frontend Mentor";
+  challengeLink.classList.add("challenge-link");
+  challengeLink.innerHTML = "View original challenge";
   challengeLink.href = external;
   challengeLink.target = "_blank";
   challengeLink.rel = "noopener";
+
+  let ftmImage = document.createElement("img");
+  ftmImage.src = "./ftmIcon.png";
+  ftmImage.alt = "Frontend Mentor Logo";
+
+  challengeLink.appendChild(ftmImage);
 
   container.appendChild(aLinkContainer);
   container.appendChild(challengeDate);
