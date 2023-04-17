@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+@import "./vars.scss";
+@import "./mixins.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  background-color: $p7-extra-light-gray;
+  inset: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+body {
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: "Space Mono", monospace;
+  width: 45.625rem;
+
+  @include breakpoint(tablet) {
+    margin: 0 4rem;
+  }
+  @include breakpoint(mobile) {
+    margin: 0 1rem;
+    padding: 2rem 0;
+  }
+}
+
+@import "./_header.scss";
+@import "./search-bar";
+@import "./result";
+
+.dark-theme {
+  background-color: $p7-very-dark-blue !important;
+  color: white !important;
+}
+.dark-theme-stats-bg {
+  background-color: $p7-almost-black !important;
+  color: white !important;
+}
+.light-text {
+  color: white !important;
+}

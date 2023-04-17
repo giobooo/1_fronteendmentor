@@ -1,0 +1,50 @@
+@import "./vars.scss";
+@import "./mixins.scss";
+
+.search-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  @include cardOuterStyle;
+
+  div {
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1.4375rem 0;
+    width: 100%;
+  }
+
+  button {
+    background-color: $p7-blue;
+    color: $p7-white;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 0.625rem;
+    margin-right: 0.625rem;
+    margin-left: 1rem;
+    @include breakpoint(mobile) {
+      padding: 0.75rem 1rem;
+      font-size: 0.875rem;
+    }
+  }
+
+  input {
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    font-family: inherit;
+    margin-left: 1.4375rem;
+    width: 100%;
+    @include breakpoint(mobile) {
+      font-size: 0.8125rem;
+    }
+  }
+}
