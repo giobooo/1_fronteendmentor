@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/giobooo/giovannibrienzaftm/tree/main/007_github-user-search-app)
+- Live Site URL: [Github Pages](https://your-live-site-url.com)
 
 ## My process
 
