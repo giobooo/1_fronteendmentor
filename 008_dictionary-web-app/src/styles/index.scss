@@ -1,0 +1,36 @@
+@use "./colors";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 18px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: colors.$p8-g-100;
+}
+
+button {
+  font-family: inherit;
+  color: inherit;
+}
+input {
+  font-family: inherit;
+  color: inherit;
+}
+
+#root {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 40.8889rem;
+  align-self: center;
+  padding-top: 3.2222rem;
+}

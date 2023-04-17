@@ -1,0 +1,36 @@
+.search-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2.8333rem;
+  border-radius: 0.8889rem;
+  position: relative;
+
+  label {
+    width: -webkit-fill-available;
+
+    input {
+      background-color: transparent;
+      border: none;
+      font-size: 1.1111rem;
+      font-weight: 700;
+      width: 100%;
+      padding: 1.1111rem 1.3333rem;
+    }
+  }
+
+  button {
+    position: absolute;
+    vertical-align: middle;
+    right: 1rem;
+    top: 15px;
+    padding: 0.5rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    img {
+      width: 0.8889rem;
+      height: 0.8889rem;
+    }
+  }
+}
