@@ -1,4 +1,68 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+.light {
+  background-color: #f6f8ff;
+  transition: all 0.5s;
+}
+.light body button span {
+  color: #4b6a9b;
+}
+.light body .user-profile,
+.light body .search-bar {
+  background-color: #fefefe;
+}
+.light body .search-bar input {
+  color: #141d2f;
+}
+.light body .user-gh {
+  color: #0079ff;
+}
+.light body .user-date,
+.light body .user-bio,
+.light body .link span,
+.light body .link a,
+.light body .user-stats span:first-child {
+  color: #697c9a;
+}
+.light body .user-stats {
+  background-color: #f6f8ff;
+}
+.light body svg path {
+  fill: #4b6a9b;
+}
+
+.dark {
+  background-color: #141d2f;
+  color: #ffffff;
+  transition: all 0.5s;
+}
+.dark body button span {
+  color: #ffffff;
+}
+.dark body .user-profile,
+.dark body .search-bar {
+  background-color: #1e2a47;
+  box-shadow: none;
+}
+.dark body .search-bar input {
+  color: #ffffff;
+}
+.dark body .user-gh {
+  color: #0079ff;
+}
+.dark body .user-date,
+.dark body .user-bio,
+.dark body .link span,
+.dark body .link a,
+.dark body .user-stats span:first-child {
+  color: #ffffff;
+}
+.dark body .user-stats {
+  background-color: #141d2f;
+}
+.dark body svg path {
+  fill: #ffffff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +70,6 @@
 }
 
 :root {
-  background-color: #f6f8ff;
   inset: 0;
   position: absolute;
   display: flex;
@@ -16,7 +79,6 @@
 }
 
 body {
-  top: 0;
   display: flex;
   flex-direction: column;
   font-family: "Space Mono", monospace;
@@ -58,7 +120,6 @@ header button span {
   font-weight: 700;
   font-size: 0.8125rem;
   letter-spacing: 0.1563rem;
-  color: #4b6a9b;
 }
 
 h1 {
@@ -75,7 +136,6 @@ h1 {
   margin-bottom: 1.5rem;
   box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
   border-radius: 0.9375rem;
-  background-color: #fefefe;
 }
 .search-bar div {
   margin-left: 2rem;
@@ -122,7 +182,6 @@ h1 {
   padding: 3rem;
   box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
   border-radius: 0.9375rem;
-  background-color: #fefefe;
 }
 @media (max-width: 768px) {
   .user-profile {
@@ -191,7 +250,6 @@ h1 {
   grid-area: user-date;
   text-align: right;
   align-self: center;
-  color: #697c9a;
 }
 @media (max-width: 768px) {
   .user-date {
@@ -208,9 +266,6 @@ h1 {
 .user-gh {
   grid-area: user-gh;
 }
-.user-gh a {
-  color: #0079ff;
-}
 @media (max-width: 590px) {
   .user-gh {
     font-size: 0.8125rem;
@@ -221,7 +276,6 @@ h1 {
   grid-area: user-bio;
   font-size: 0.9375rem;
   line-height: 1.5625rem;
-  color: #4b6a9b;
   margin-bottom: 2rem;
   margin-top: 1.25rem;
 }
@@ -237,7 +291,6 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  background-color: #f6f8ff;
   padding: 1rem 2rem;
   gap: 5rem;
   border-radius: 0.625rem;
@@ -261,7 +314,6 @@ h1 {
 .user-stats span:first-child {
   font-size: 0.8125rem;
   font-weight: 400;
-  color: #4b6a9b;
 }
 @media (max-width: 590px) {
   .user-stats span:first-child {
@@ -298,7 +350,6 @@ h1 {
 .user-links span,
 .user-links a {
   font-size: 0.9375rem;
-  color: #4b6a9b;
   margin-left: 1.25rem;
   align-self: center;
   width: 180px;
@@ -317,7 +368,6 @@ h1 {
 }
 
 .dark-theme {
-  background-color: #1e2a47 !important;
   color: white !important;
 }
 

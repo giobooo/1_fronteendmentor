@@ -1,0 +1,45 @@
+@use "vars.scss";
+
+.dark {
+  background-color: $p7-almost-black;
+  color: $p7-white;
+  transition: all 0.5s;
+
+  body {
+    button {
+      span {
+        color: $p7-white;
+      }
+    }
+
+    .user-profile,
+    .search-bar {
+      background-color: $p7-very-dark-blue;
+      box-shadow: none;
+    }
+
+    .search-bar input {
+      color: $p7-white;
+    }
+
+    .user-gh {
+      color: $p7-blue;
+    }
+
+    .user-date,
+    .user-bio,
+    .link span,
+    .link a,
+    .user-stats span:first-child {
+      color: $p7-white;
+    }
+
+    .user-stats {
+      background-color: $p7-almost-black;
+    }
+
+    svg path {
+      fill: $p7-white;
+    }
+  }
+}

@@ -7,43 +7,18 @@ let darkT = false;
 document.querySelector("header > button").addEventListener("click", () => {
   if (darkT === false) {
     darkT = true;
-    document.querySelector(":root").classList.add("dark-theme-stats-bg");
-    document.querySelector(".search-bar").classList.add("dark-theme");
-    document.querySelector(".user-profile").classList.add("dark-theme");
-    document.querySelector(".user-stats").classList.add("dark-theme-stats-bg");
+    document.querySelector(":root").classList.add("dark");
+    document.querySelector(":root").classList.remove("light");
     document.querySelector("header > button > img").src =
       "./assets/icon-sun.svg";
     document.querySelector("header > button > span").innerHTML = "LIGHT";
-    document
-      .querySelectorAll(
-        ".search-bar input, header > button > span, .user-date span, .user-bio p, .user-links span, .user-links a, .user-stats span"
-      )
-      .forEach((item) => {
-        item.classList.add("light-text");
-      });
-    document.querySelectorAll(".link path").forEach((item) => {
-      item.style.fill = "#ffffff";
-    });
   } else {
-    document.querySelector(":root").classList.remove("dark-theme-stats-bg");
-    document.querySelector(".search-bar").classList.remove("dark-theme");
-    document.querySelector(".user-profile").classList.remove("dark-theme");
-    document
-      .querySelector(".user-stats")
-      .classList.remove("dark-theme-stats-bg");
+    document.querySelector(":root").classList.add("light");
+    document.querySelector(":root").classList.remove("dark");
     document.querySelector("header > button > img").src =
       "./assets/icon-moon.svg";
     document.querySelector("header > button > span").innerHTML = "DARK";
-    document
-      .querySelectorAll(
-        ".search-bar input, header > button > span, .user-date span, .user-bio p, .user-links span, .user-links a, .user-stats span"
-      )
-      .forEach((item) => {
-        item.classList.remove("light-text");
-      });
-    document.querySelectorAll(".link path").forEach((item) => {
-      item.style.fill = "#4b6a9b";
-    });
+
     darkT = false;
   }
 });

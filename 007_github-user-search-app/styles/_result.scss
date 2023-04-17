@@ -71,7 +71,6 @@
   grid-area: user-date;
   text-align: right;
   align-self: center;
-  color: $p7-light-blue-gray;
   @include breakpoint(tablet) {
     text-align: left;
     align-self: self-start;
@@ -83,9 +82,6 @@
 
 .user-gh {
   grid-area: user-gh;
-  a {
-    color: $p7-blue;
-  }
   @include breakpoint(mobile) {
     font-size: 0.8125rem;
   }
@@ -95,7 +91,6 @@
   grid-area: user-bio;
   font-size: 0.9375rem;
   line-height: 1.5625rem;
-  color: $p7-dark-blue-gray;
   margin-bottom: 2rem;
   margin-top: 1.25rem;
   @include breakpoint(mobile) {
@@ -109,7 +104,6 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  background-color: $p7-extra-light-gray;
   padding: 1rem 2rem;
   gap: 5rem;
   border-radius: 0.625rem;
@@ -135,7 +129,6 @@
   span:first-child {
     font-size: 0.8125rem;
     font-weight: 400;
-    color: $p7-dark-blue-gray;
     @include breakpoint(mobile) {
       font-size: 0.6875rem;
     }
@@ -167,7 +160,6 @@
 .user-links span,
 .user-links a {
   font-size: 0.9375rem;
-  color: $p7-dark-blue-gray;
   margin-left: 1.25rem;
   align-self: center;
   width: 180px;
