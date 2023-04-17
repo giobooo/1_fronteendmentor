@@ -1,0 +1,24 @@
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 2.25rem;
+}
+header div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+header div span {
+  margin-right: 1rem;
+  font-weight: 700;
+  font-size: 0.8125rem;
+  letter-spacing: 0.1563rem;
+  color: #4b6a9b;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 1.625rem;
+}/*# sourceMappingURL=header.css.map */

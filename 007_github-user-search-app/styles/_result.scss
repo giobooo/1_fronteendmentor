@@ -1,0 +1,184 @@
+@import "./mixins.scss";
+@import "vars.scss";
+
+.user-profile {
+  padding: 3rem;
+  @include breakpoint(tablet) {
+    padding: 2.5rem;
+  }
+  @include breakpoint(mobile) {
+    padding: 2rem 1.5rem;
+  }
+  @include cardOuterStyle;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto;
+  grid-auto-columns: auto;
+  grid-auto-rows: auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "user-image user-name user-date"
+    "user-image user-gh user-gh"
+    "user-image user-bio user-bio"
+    ". user-stats user-stats"
+    ". user-links user-links"
+    ". . .";
+
+  @include breakpoint(tablet) {
+    grid-template-areas:
+      "user-image user-name ."
+      "user-image user-gh ."
+      "user-image user-date ."
+      "user-bio user-bio user-bio"
+      "user-stats user-stats user-stats"
+      "user-links user-links user-links";
+  }
+  @include breakpoint(mobile) {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+.user-image {
+  grid-area: user-image;
+  align-self: self-start;
+  img {
+    height: 117px;
+    width: 117px;
+    border-radius: 9999px;
+    margin-right: 2.3125rem;
+    object-fit: cover;
+    @include breakpoint(mobile) {
+      height: 4.375rem;
+      width: 4.375rem;
+      margin-right: 1.25rem;
+    }
+  }
+}
+
+.user-name {
+  grid-area: user-name;
+  font-size: 1.625rem;
+  font-weight: 700;
+  @include breakpoint(mobile) {
+    font-size: 1rem;
+  }
+}
+
+.user-date {
+  grid-area: user-date;
+  text-align: right;
+  align-self: center;
+  color: $p7-light-blue-gray;
+  @include breakpoint(tablet) {
+    text-align: left;
+    align-self: self-start;
+  }
+  @include breakpoint(mobile) {
+    font-size: 0.8125rem;
+  }
+}
+
+.user-gh {
+  grid-area: user-gh;
+  a {
+    color: $p7-blue;
+  }
+  @include breakpoint(mobile) {
+    font-size: 0.8125rem;
+  }
+}
+
+.user-bio {
+  grid-area: user-bio;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  color: $p7-dark-blue-gray;
+  margin-bottom: 2rem;
+  margin-top: 1.25rem;
+  @include breakpoint(mobile) {
+    font-size: 0.8125rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.user-stats {
+  grid-area: user-stats;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: $p7-extra-light-gray;
+  padding: 1rem 2rem;
+  gap: 5rem;
+  border-radius: 0.625rem;
+  margin-bottom: 1.875rem;
+
+  @include breakpoint(tablet) {
+  }
+  @include breakpoint(mobile) {
+    gap: 1.5rem;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+
+  div {
+    @include breakpoint(mobile) {
+      text-align: center;
+    }
+  }
+
+  span {
+    display: block;
+  }
+  span:first-child {
+    font-size: 0.8125rem;
+    font-weight: 400;
+    color: $p7-dark-blue-gray;
+    @include breakpoint(mobile) {
+      font-size: 0.6875rem;
+    }
+  }
+  span:last-child {
+    font-size: 1.375rem;
+    font-weight: 700;
+    @include breakpoint(mobile) {
+      font-size: 1rem;
+    }
+  }
+}
+.user-links {
+  grid-area: user-links;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  gap: 1.25rem;
+  align-items: center;
+  white-space: nowrap;
+
+  @include breakpoint(mobile) {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    gap: 1rem;
+  }
+}
+
+.user-links span,
+.user-links a {
+  font-size: 0.9375rem;
+  color: $p7-dark-blue-gray;
+  margin-left: 1.25rem;
+  align-self: center;
+  width: 180px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  @include breakpoint(mobile) {
+    font-size: 0.8125rem;
+    vertical-align: top;
+    margin-left: 0.9375rem;
+    width: auto;
+  }
+}

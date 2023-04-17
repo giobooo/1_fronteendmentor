@@ -1,0 +1,20 @@
+// Light Colors
+
+$p7-almost-white: #fefefe;
+$p7-extra-light-gray: #f6f8ff;
+$p7-very-dark-gray: #2b3442;
+$p7-dark-blue-gray: #4b6a9b;
+$p7-light-blue-gray: #697c9a;
+$p7-blue: #0079ff;
+
+// Dark Colors
+
+$p7-white: #ffffff;
+$p7-almost-black: #141d2f;
+$p7-very-dark-blue: #1e2a47;
+
+//Breakpoints
+$p7-breakpoints: (
+  "tablet": "max-width: 768px",
+  "mobile": "max-width: 590px",
+);
