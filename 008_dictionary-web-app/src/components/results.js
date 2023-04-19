@@ -11,7 +11,7 @@ function Results(props) {
     return (
       <section className="error-section">
         <span>😕</span>
-        <h4>No definitions found</h4>
+        <h3>No definitions found</h3>
         <p>
           Sorry pal, we couldn't find definitions for the word you were looking
           for. You can try the search again at later time or head to the web
@@ -26,7 +26,7 @@ function Results(props) {
           <div>
             <h1>{props.result[0].word}</h1>
             {props.result[0].phonetic !== null && (
-              <h3>{props.result[0].phonetic}</h3>
+              <h2>{props.result[0].phonetic}</h2>
             )}
           </div>
           {props.result[0].phonetics.length > 0 &&
@@ -62,10 +62,10 @@ function Results(props) {
               className="result__meanings"
             >
               <div>
-                <h3>{p.partOfSpeech}</h3>
+                <h2>{p.partOfSpeech}</h2>
                 <div></div>
               </div>
-              <h4>Meaning</h4>
+              <h3>Meaning</h3>
               <ul>
                 {p.definitions.length > 0 &&
                   p.definitions.map((d) => (
@@ -82,7 +82,7 @@ function Results(props) {
               </ul>
               {p.synonyms.length > 0 && (
                 <div className="result__synonyms">
-                  <h4>Synonyms</h4>
+                  <h3>Synonyms</h3>
                   {p.synonyms.map((syn) => (
                     <span
                       key={syn + Math.floor(Math.random() * 10000).toString()}
