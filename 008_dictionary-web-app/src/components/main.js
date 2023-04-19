@@ -1,4 +1,4 @@
-import { createElement, useState } from "react";
+import { useState } from "react";
 import { SearchNewWord } from "../freeDictionaryAPI";
 import SearchBar from "./searchBar";
 import Results from "./results";

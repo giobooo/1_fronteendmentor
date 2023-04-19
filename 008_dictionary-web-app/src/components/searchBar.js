@@ -1,7 +1,12 @@
 import "../styles/_search-bar.scss";
 import searchIcon from "../assets/images/icon-search.svg";
+import { useEffect } from "react";
 
 function SearchBar(props) {
+  useEffect(() => {
+    props.callback("computer");
+  }, []);
+
   function submitAction(e) {
     e.preventDefault();
     let inputString = document.querySelector(".search-bar input").value;
