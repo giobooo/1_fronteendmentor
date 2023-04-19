@@ -1,0 +1,19 @@
+@use "./colors";
+
+.light {
+  background-color: colors.$p8-g-100;
+  color: colors.$p8-g-800;
+
+  .search-bar {
+    input {
+      background-color: colors.$p8-g-200;
+    }
+  }
+
+  .dropdown-menu {
+    background-color: colors.$p8-g-100;
+    -webkit-box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+  }
+}

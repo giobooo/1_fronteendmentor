@@ -1,0 +1,30 @@
+@use "./colors";
+
+.dark {
+  background-color: colors.$p8-g-800;
+  color: colors.$p8-g-100;
+
+  .search-bar {
+    input {
+      background-color: colors.$p8-g-700;
+    }
+  }
+
+  .dropdown-menu {
+    background-color: colors.$p8-g-700;
+    -webkit-box-shadow: 0px 5px 30px #a445ed;
+    -moz-box-shadow: 0px 5px 30px #a445ed;
+    box-shadow: 0px 5px 30px #a445ed;
+  }
+
+  .result__meanings {
+    div:first-child {
+      div {
+        background-color: colors.$p8-g-500;
+      }
+    }
+  }
+  .result__source {
+    border-top: 0.0625rem solid colors.$p8-g-500;
+  }
+}
