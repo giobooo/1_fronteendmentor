@@ -20,11 +20,11 @@ header {
     }
   }
 
-  label {
+  .dark-light-switch {
     position: relative;
     display: inline-block;
-    width: 40px;
-    height: 20px;
+    width: 2.5rem;
+    height: 1.25rem;
     margin-left: 1rem;
     margin-right: 1rem;
     input {
@@ -42,19 +42,19 @@ header {
       background-color: colors.$p8-g-400;
       -webkit-transition: 0.4s;
       transition: 0.4s;
-      border-radius: 10px;
+      border-radius: 0.625rem;
     }
     span:before {
       position: absolute;
       content: "";
-      height: 14px;
-      width: 14px;
-      left: 3px;
-      bottom: 3px;
+      height: 0.875rem;
+      width: 0.875rem;
+      left: 0.1875rem;
+      bottom: 0.1875rem;
       background-color: white;
       -webkit-transition: 0.4s;
       transition: 0.4s;
-      border-radius: 10px;
+      border-radius: 0.625rem;
     }
     input:checked + span {
       background-color: colors.$p8-a-purple;
@@ -65,9 +65,9 @@ header {
     }
 
     input:checked + span:before {
-      -webkit-transform: translateX(20px);
-      -ms-transform: translateX(20px);
-      transform: translateX(20px);
+      -webkit-transform: translateX(1.25rem);
+      -ms-transform: translateX(1.25rem);
+      transform: translateX(1.25rem);
     }
   }
 
@@ -87,16 +87,16 @@ header {
     flex-direction: column;
     align-items: flex-start;
     position: absolute;
-    padding: 1.3333rem 0 1.3333rem 1.3333rem;
+    padding: 1.5rem 0 1.5rem 1.5rem;
     background-color: colors.$p8-g-100;
     border-radius: 0.8889rem;
     z-index: 20;
     top: 2rem;
     right: 6.5rem;
-    min-width: 8.4444rem;
+    min-width: 11.4375rem;
     transition-property: all;
     transition-duration: 0.2s;
-    opacity: 0;
+    transform-origin: top;
 
     button {
       background-color: transparent;
@@ -120,20 +120,19 @@ header {
     }
   }
 }
-.dropdown-menu[open="true"] {
-  transform-origin: top;
+.dropdown-menu[open="1"] {
   transform: translateY(1rem);
   opacity: 1;
 }
-.dropdown-menu[open="false"] {
-  transform-origin: top;
+.dropdown-menu[open="0"] {
   transform: translateY(0);
   opacity: 0;
+  visibility: hidden;
 }
 
-.arrow-font[open="false"] {
+.arrow-font[open="0"] {
   transform: rotate(0);
 }
-.arrow-font[open="true"] {
+.arrow-font[open="1"] {
   transform: rotate(180deg);
 }

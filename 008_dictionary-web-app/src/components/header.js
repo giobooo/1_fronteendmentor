@@ -12,6 +12,8 @@ function Header() {
     document.body.classList.remove("dark");
     document.body.classList.add("light");
     document.body.classList.add("sans-serif");
+    document.querySelector(".dropdown-menu").setAttribute("open", "0");
+    document.querySelector(".arrow-font").setAttribute("open", "0");
   }, []);
 
   function switchTheme() {
@@ -28,12 +30,12 @@ function Header() {
 
   function openCloseDropdown() {
     if (dropdownState === false) {
-      document.querySelector(".dropdown-menu").setAttribute("open", "true");
-      document.querySelector(".arrow-font").setAttribute("open", "true");
+      document.querySelector(".dropdown-menu").setAttribute("open", "1");
+      document.querySelector(".arrow-font").setAttribute("open", "1");
       updateState(true);
     } else {
-      document.querySelector(".dropdown-menu").setAttribute("open", "false");
-      document.querySelector(".arrow-font").setAttribute("open", "false");
+      document.querySelector(".dropdown-menu").setAttribute("open", "0");
+      document.querySelector(".arrow-font").setAttribute("open", "0");
       updateState(false);
     }
   }
@@ -56,6 +58,7 @@ function Header() {
       document.querySelector(".font-selector > button > span").innerHTML =
         "Mono";
     }
+    openCloseDropdown();
   }
 
   return (
@@ -68,7 +71,7 @@ function Header() {
           <span>Sans Serif</span>
           <svg
             className="arrow-font"
-            open="false"
+            open="0"
             xmlns="http://www.w3.org/2000/svg"
             width="14"
             height="8"
@@ -77,12 +80,12 @@ function Header() {
             <path
               fill="none"
               stroke="#A445ED"
-              stroke-width="1.5"
+              strokeWidth="1.5"
               d="m1 1 6 6 6-6"
             />
           </svg>
         </button>
-        <div className="dropdown-menu" open="false">
+        <div className="dropdown-menu" open="0">
           <button type="button" onClick={() => changeFont("sans")}>
             Sans Serif
           </button>
@@ -97,7 +100,7 @@ function Header() {
           <input type="checkbox" onChange={() => switchTheme()}></input>
           <span></span>
         </label>
-        <img src={moonIcon} alt=""></img>
+        <img className="moon-icon" src={moonIcon} alt=""></img>
       </div>
     </header>
   );

@@ -6,13 +6,13 @@ import Header from "./components/header";
 import "./styles/_light.scss";
 import "./styles/_dark.scss";
 import "./styles/_fonts.scss";
-import SearchBar from "./components/searchBar";
+import Main from "./components/main";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Header />
-    <SearchBar></SearchBar>
+    <Main />
   </React.StrictMode>
 );
 

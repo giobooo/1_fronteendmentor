@@ -1,0 +1,145 @@
+@use "./colors";
+
+.results-section {
+  margin-top: 2.8125rem;
+
+  h4 {
+    color: colors.$p8-g-400;
+    margin-bottom: 1.5625rem;
+  }
+}
+
+.result__word-phonetics {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  h2 {
+    margin-bottom: 0.5rem;
+  }
+  h3 {
+    color: colors.$p8-a-purple;
+  }
+
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  button:hover > svg > g > circle {
+    opacity: 1;
+  }
+  button:hover > svg > g > path {
+    fill: #ffffff;
+  }
+}
+
+.result__meanings {
+  margin-top: 2.5rem;
+
+  div:first-child {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2.5rem;
+    h3 {
+      font-style: italic;
+      font-weight: 700;
+      margin-right: 1.25rem;
+    }
+    div {
+      background-color: colors.$p8-g-300;
+      height: 0.0625rem;
+      width: 100%;
+    }
+  }
+
+  ul {
+    list-style: outside;
+    margin-left: 2.5rem;
+  }
+
+  li {
+    span {
+      display: block;
+      margin-top: 0.8125rem;
+      color: colors.$p8-g-400;
+    }
+  }
+
+  li:not(:last-child) {
+    margin-bottom: 0.8125rem;
+  }
+  li::marker {
+    height: 0.3125rem;
+    width: 0.3125rem;
+    margin-right: 1.5625rem;
+    color: colors.$p8-a-purple;
+    border-radius: 0.3125rem;
+  }
+}
+
+.result__synonyms {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  h4 {
+    margin-right: 1.5rem;
+  }
+  span {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: colors.$p8-a-purple;
+    margin-right: 1.5rem;
+    @media screen and (max-width: 425px) {
+      font-size: 1rem;
+      line-height: 1.21rem;
+    }
+  }
+}
+
+.result__source {
+  margin-top: 2.5rem;
+  border-top: 0.0625rem solid colors.$p8-g-300;
+  padding-top: 1.25rem;
+
+  span {
+    font-size: 0.875rem;
+    color: colors.$p8-g-400;
+    margin-right: 1.25rem;
+  }
+  a {
+    font-size: 0.875rem;
+    img {
+      margin-left: 0.5625rem;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.error-section {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  text-align: center;
+  margin-top: 8.25rem;
+  span {
+    font-size: 4rem;
+    line-height: 4.6875rem;
+    margin-bottom: 2.75rem;
+  }
+  h4 {
+    font-weight: 700;
+    margin-bottom: 24px;
+  }
+  p {
+    color: colors.$p8-g-400;
+  }
+}

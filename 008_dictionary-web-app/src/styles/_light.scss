@@ -5,7 +5,9 @@
   color: colors.$p8-g-800;
 
   .search-bar {
-    background-color: colors.$p8-g-200;
+    input {
+      background-color: colors.$p8-g-200;
+    }
   }
 
   .dropdown-menu {

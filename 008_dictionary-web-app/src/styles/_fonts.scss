@@ -12,3 +12,35 @@
 .mono {
   font-family: "Inconsolata", monospace;
 }
+
+.sans-serif,
+.serif,
+.mono {
+  h2 {
+    font-size: 4rem;
+    line-height: 4.8125rem;
+    font-weight: 700;
+    @media screen and (max-width: 425px) {
+      font-size: 2rem;
+      line-height: 2.4206rem;
+    }
+  }
+  h3 {
+    font-size: 1.5rem;
+    line-height: 1.8125rem;
+    font-weight: 400;
+    @media screen and (max-width: 425px) {
+      font-size: 1.125rem;
+      line-height: 1.5rem;
+    }
+  }
+  h4 {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+    @media screen and (max-width: 425px) {
+      font-size: 1rem;
+      line-height: 1.21rem;
+    }
+  }
+}
