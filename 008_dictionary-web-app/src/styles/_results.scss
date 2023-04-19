@@ -113,9 +113,13 @@
   }
   a {
     font-size: 0.875rem;
+    color: colors.$p8-g-600;
     img {
       margin-left: 0.5625rem;
     }
+  }
+  a:visited {
+    color: colors.$p8-g-600;
   }
 
   @media screen and (max-width: 425px) {
