@@ -24,7 +24,7 @@ function Results(props) {
       <section className="results-section">
         <div className="result__word-phonetics">
           <div>
-            <h2>{props.result[0].word}</h2>
+            <h1>{props.result[0].word}</h1>
             {props.result[0].phonetic !== null && (
               <h3>{props.result[0].phonetic}</h3>
             )}
@@ -32,7 +32,11 @@ function Results(props) {
           {props.result[0].phonetics.length > 0 &&
             props.result[0].phonetics[0].audio !== "" && (
               <div>
-                <button type="button" onClick={() => playAudio()}>
+                <button
+                  type="button"
+                  title="play audio button"
+                  onClick={() => playAudio()}
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="75"

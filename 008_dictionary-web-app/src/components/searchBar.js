@@ -25,7 +25,7 @@ function SearchBar(props) {
         <input type="text" placeholder="Search for any word..."></input>
         <span>Whoops, can’t be empty…</span>
       </label>
-      <button type="submit">
+      <button type="submit" title="search button">
         <img src={searchIcon} alt=""></img>
       </button>
     </form>

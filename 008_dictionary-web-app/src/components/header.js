@@ -12,8 +12,8 @@ function Header() {
     document.body.classList.remove("dark");
     document.body.classList.add("light");
     document.body.classList.add("sans-serif");
-    document.querySelector(".dropdown-menu").setAttribute("open", "0");
-    document.querySelector(".arrow-font").setAttribute("open", "0");
+    document.querySelector(".dropdown-menu").setAttribute("menuOpen", "0");
+    document.querySelector(".arrow-font").setAttribute("menuOpen", "0");
   }, []);
 
   function switchTheme() {
@@ -30,12 +30,12 @@ function Header() {
 
   function openCloseDropdown() {
     if (dropdownState === false) {
-      document.querySelector(".dropdown-menu").setAttribute("open", "1");
-      document.querySelector(".arrow-font").setAttribute("open", "1");
+      document.querySelector(".dropdown-menu").setAttribute("menuOpen", "1");
+      document.querySelector(".arrow-font").setAttribute("menuOpen", "1");
       updateState(true);
     } else {
-      document.querySelector(".dropdown-menu").setAttribute("open", "0");
-      document.querySelector(".arrow-font").setAttribute("open", "0");
+      document.querySelector(".dropdown-menu").setAttribute("menuOpen", "0");
+      document.querySelector(".arrow-font").setAttribute("menuOpen", "0");
       updateState(false);
     }
   }
@@ -71,7 +71,7 @@ function Header() {
           <span>Sans Serif</span>
           <svg
             className="arrow-font"
-            open="0"
+            menuOpen="0"
             xmlns="http://www.w3.org/2000/svg"
             width="14"
             height="8"
@@ -85,7 +85,7 @@ function Header() {
             />
           </svg>
         </button>
-        <div className="dropdown-menu" open="0">
+        <div className="dropdown-menu" menuOpen="0">
           <button type="button" onClick={() => changeFont("sans")}>
             Sans Serif
           </button>
