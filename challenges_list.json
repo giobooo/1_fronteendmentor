@@ -48,6 +48,13 @@
       "external": "https://www.frontendmentor.io/solutions/responsive-github-search-app-fully-working-jSH8c-zRd5",
       "screenshot": "./007_github-user-search-app/screenshot.jpg",
       "date": "17/04/2023"
+    },
+    {
+      "name": "Dictionary Search App",
+      "href": "./008_dictionary-web-app/build/index.html",
+      "external": "https://www.frontendmentor.io/solutions/fully-working-and-responsive-dictionary-app-tcrVARUyIf",
+      "screenshot": "./008_dictionary-web-app/screenshot.jpg",
+      "date": "19/04/2023"
     }
   ]
 }

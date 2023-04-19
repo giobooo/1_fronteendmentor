@@ -37,7 +37,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Github](https://github.com/giobooo/giovannibrienzaftm/tree/main/008_dictionary-web-app)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/fully-working-and-responsive-dictionary-app-tcrVARUyIf)
 - Live Site URL: [Github Pages](https://giobooo.github.io/giovannibrienzaftm/008_dictionary-web-app/build/)
 
 ## My process
