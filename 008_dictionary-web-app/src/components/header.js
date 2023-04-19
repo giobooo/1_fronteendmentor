@@ -97,7 +97,11 @@ function Header() {
           </button>
         </div>
         <label className="dark-light-switch">
-          <input type="checkbox" onChange={() => switchTheme()}></input>
+          <input
+            type="checkbox"
+            title="theme switch button"
+            onChange={() => switchTheme()}
+          ></input>
           <span></span>
         </label>
         <img className="moon-icon" src={moonIcon} alt=""></img>
