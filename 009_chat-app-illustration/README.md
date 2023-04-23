@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/chat-app-design-landing-page-5XVAmX7qDW)
+- Live Site URL: [Add live site URL here](https://giobooo.github.io/giovannibrienzaftm/009_chat-app-illustration/)
 
 ## My process
 

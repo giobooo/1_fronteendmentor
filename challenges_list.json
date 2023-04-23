@@ -55,6 +55,13 @@
       "external": "https://www.frontendmentor.io/solutions/fully-working-and-responsive-dictionary-app-tcrVARUyIf",
       "screenshot": "./008_dictionary-web-app/screenshot.jpg",
       "date": "19/04/2023"
+    },
+    {
+      "name": "Chat App CSS illustration",
+      "href": "./009_chat-app-illustration/index.html",
+      "external": "https://www.frontendmentor.io/solutions/chat-app-design-landing-page-5XVAmX7qDW",
+      "screenshot": "./009_chat-app-illustration/screenshot.jpg",
+      "date": "23/04/2023"
     }
   ]
 }
