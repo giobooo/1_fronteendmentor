@@ -62,6 +62,13 @@
       "external": "https://www.frontendmentor.io/solutions/chat-app-design-landing-page-5XVAmX7qDW",
       "screenshot": "./009_chat-app-illustration/screenshot.jpg",
       "date": "23/04/2023"
+    },
+    {
+      "name": "Profile card component",
+      "href": "./010_profile-card-component-main/index.html",
+      "external": "https://www.frontendmentor.io/solutions/chat-app-design-landing-page-5XVAmX7qDW",
+      "screenshot": "./010_profile-card-component-main/screenshot.jpg",
+      "date": "24/04/2023"
     }
   ]
 }
