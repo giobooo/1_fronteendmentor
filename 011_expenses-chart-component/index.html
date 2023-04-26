@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./src/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Expenses chart component</title>
+
+    <link rel="stylesheet" href="./src/styles/style.scss" />
+  </head>
+  <body>
+    <header>
+      <div class="mybalance-container">
+        <div>
+          <h1>My balance</h1>
+          <span class="mybalance-container__balance headingL">$921.48</span>
+        </div>
+        <img src="./src/images/logo.svg" alt="" />
+        <div class="message">
+          <p>Click here to generate random data.</p>
+          <div></div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="card">
+        <h2 class="headingL">Spending - Last 7 days</h2>
+        <div class="data-container">
+          <div class="data-container__day mon">
+            <div><span>$52.36</span></div>
+            <span class="miniCaption">mon</span>
+          </div>
+          <div class="data-container__day tue">
+            <div><span>$52.36</span></div>
+            <span class="miniCaption">tue</span>
+          </div>
+          <div class="data-container__day wed">
+            <div><span>$52.36</span></div>
+            <span class="miniCaption">wed</span>
+          </div>
+          <div class="data-container__day thu">
+            <div><span>$52.36</span></div>
+            <span class="miniCaption">thu</span>
+          </div>
+          <div class="data-container__day fri">
+            <div><span>$52.36</span></div>
+            <span class="miniCaption">fri</span>
+          </div>
+          <div class="data-container__day sat">
+            <div><span>$52.36</span></div>
+            <span class="miniCaption">sat</span>
+          </div>
+          <div class="data-container__day sun">
+            <div><span>$52.36</span></div>
+            <span class="miniCaption">sun</span>
+          </div>
+        </div>
+        <div class="total-container">
+          <div class="total-container__this-month">
+            <span>Total this month</span>
+            <span class="headingXL">$478.33</span>
+          </div>
+          <div class="total-container__last-month">
+            <span>from last month</span>
+            <span>+2.4%</span>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="./src/script.tsx" type="module"></script>
+</html>
