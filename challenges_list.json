@@ -69,6 +69,13 @@
       "external": "https://www.frontendmentor.io/solutions/profile-card-component-lWh3qbE5FI",
       "screenshot": "./010_profile-card-component-main/screenshot.jpg",
       "date": "24/04/2023"
+    },
+    {
+      "name": "Expenses chart component (plus random data generator)",
+      "href": "./011_expenses-chart-component/dist/index.html",
+      "external": "https://www.frontendmentor.io/solutions/expensive-chart-responsive-and-with-a-random-data-generator-idFHOMxDoO",
+      "screenshot": "./011_expenses-chart-component/screenshot.jpg",
+      "date": "26/04/2023"
     }
   ]
 }
