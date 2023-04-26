@@ -66,15 +66,16 @@ function SetData(array: Array<number>){
             moneyValueNode.innerHTML = "$" + array[index].toPrecision(4).toString();
         }
 
-        const bar = node[index].querySelector("div");
+        const bar = node[index].querySelector(".graph-bar") as HTMLElement;
         //calculates the heigth for each bar based on the highest number on the array
         const calcH = ((9.375 * array[index])/maxNum);
         if (bar !== null){
             bar.style.height = calcH.toString() +"rem";
         }
         //changes the color of the bar if it corresponds to the actual day of the week
-        if (day == index && bar !== null){
-            bar.style.backgroundColor = "#B4E0E5";
+        const filler = bar.querySelector(".graph-bar__filler") as HTMLElement;
+        if (day == index && filler !== null){
+            filler.style.backgroundColor = "#76B5BC";
         }    
     }
 }
