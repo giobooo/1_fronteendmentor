@@ -10,6 +10,7 @@ This is a solution to the [Expenses chart component challenge on Frontend Mentor
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
 - [Author](#author)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
@@ -45,6 +46,20 @@ Users should be able to:
 - Mobile-first workflow
 - SASS
 - Typescript
+
+### What I learned
+
+I did't know how simple it is to create an array using map function.
+I also didn't know about the max function of Math to return the highest value in an array.
+And finally i didn't know that you could create an array directly from Array.from.
+
+```js
+const expensesData: Array<number> = data.map((p) => p.amount);
+//------------------------------------------------------------------
+const maxNum = Math.max(...array);
+//------------------------------------------------------------------
+SetData(Array.from({ length: 7 }, () => Math.random() * 100));
+```
 
 ## Author
 
