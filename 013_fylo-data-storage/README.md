@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://your-solution-url.com)
-- Live Site URL: [Github Pages](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/fylo-data-storage-with-progress-bar-animation-Xmv-raP0Ul)
+- Live Site URL: [Github Pages](https://giobooo.github.io/giovannibrienzaftm/013_fylo-data-storage/dist/index.html)
 
 ## My process
 
