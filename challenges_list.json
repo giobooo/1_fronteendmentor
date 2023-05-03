@@ -76,6 +76,13 @@
       "external": "https://www.frontendmentor.io/solutions/expensive-chart-responsive-and-with-a-random-data-generator-idFHOMxDoO",
       "screenshot": "./011_expenses-chart-component/screenshot.jpg",
       "date": "26/04/2023"
+    },
+    {
+      "name": "Fylo data storage",
+      "href": "./013_fylo-data-storage/dist/index.html",
+      "external": "https://www.frontendmentor.io/solutions/expensive-chart-responsive-and-with-a-random-data-generator-idFHOMxDoO",
+      "screenshot": "./013_fylo-data-storage/screenshot.jpg",
+      "date": "26/04/2023"
     }
   ]
 }
