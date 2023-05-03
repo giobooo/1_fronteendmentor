@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0c122c;
+  background-image: url("./images/bg-desktop.png");
+  background-repeat: repeat-x;
+  background-position-y: bottom;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (max-width: 768px) {
+    background-image: url("./images/bg-mobile.png");
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: cover;
+  }
+}
+
+#root {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 1.875rem;
+  width: 100%;
+  padding: 1rem;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+}
+
+header {
+  background-color: #1e2d69;
+  padding: 2.5rem 8.3125rem 2.5rem 2.5rem;
+  border-radius: 0.625rem 6.25rem 0.625rem 0.625rem;
+
+  @media screen and (max-width: 768px) {
+    padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+
+    width: 100%;
+    max-width: 21.875rem;
+  }
+
+  img {
+    margin-bottom: 2.0625rem;
+  }
+  .icons-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+    .icons-container__icon {
+      height: 3rem;
+      width: 3rem;
+      background-color: #0c122c;
+      display: flex;
+      border-radius: 0.625rem;
+
+      svg {
+        margin: auto;
+      }
+    }
+  }
+}
+
+main {
+  background-color: #1e2d69;
+  padding: 2.5rem;
+  border-radius: 0.625rem;
+  flex: 0 1 33.75rem;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    max-width: 21.875rem;
+    flex: 0;
+    padding-bottom: 3.25rem;
+  }
+
+  .storage-left {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .storage-left__value {
+      position: absolute;
+      background-color: white;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 1rem 1.5rem;
+      right: 0;
+      top: -5.5rem;
+      border-radius: 0.625rem 0.625rem 0 0.625rem;
+
+      @media screen and (max-width: 768px) {
+        top: unset;
+        bottom: -5.5rem;
+        left: unset;
+        right: unset;
+        border-radius: 0.625rem;
+      }
+
+      > div {
+        position: absolute;
+        bottom: -1.3rem;
+        right: 0;
+        background-color: white;
+        height: 1.3538rem;
+        width: 1.3538rem;
+        clip-path: polygon(0 0, 100% 100%, 100% 0);
+
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
+      }
+
+      > span:nth-of-type(1) {
+        font-weight: 700;
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        color: #0c122c;
+        margin-right: 0.5625rem;
+      }
+
+      > span:nth-of-type(2) {
+        font-weight: 700;
+        font-size: 0.75rem;
+        line-height: 0.875rem;
+        letter-spacing: 0.0625rem;
+        color: #0c122c;
+        opacity: 0.5;
+      }
+    }
+
+    h1 {
+      font-size: inherit;
+      font-weight: inherit;
+      color: #dbd9ff;
+      margin-bottom: 1rem;
+      text-align: left;
+      width: 100%;
+      @media screen and (max-width: 768px) {
+        text-align: center;
+      }
+    }
+    .progress-bar {
+      width: 100%;
+      background-color: #0c122c;
+      height: 1.25rem;
+      border-radius: 0.625rem;
+      padding: 0.1875rem;
+      margin-bottom: 0.5rem;
+
+      .progress-bar__progress {
+        background: linear-gradient(90deg, #ffa197 0%, #ff4a95 100%);
+        width: 5%;
+        height: 100%;
+        border-radius: 10px;
+        padding: 0.125rem;
+        transition: all 1.5s ease-in-out;
+
+        .progress-bar__white-circle {
+          height: 0.625rem;
+          width: 0.625rem;
+          background-color: white;
+          float: right;
+          border-radius: 99px;
+        }
+      }
+    }
+
+    .min-max-container {
+      width: 100%;
+      color: #dbd9ff;
+      font-weight: 700;
+      font-size: 0.75rem;
+      line-height: 0.875rem;
+    }
+    .min-max-container__min {
+      float: left;
+    }
+    .min-max-container__max {
+      float: right;
+    }
+  }
+}
