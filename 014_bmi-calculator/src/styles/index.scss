@@ -1,0 +1,21 @@
+@use "./header";
+@import "./fonts";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter";
+  @include body-m;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#root {
+  max-width: 90rem;
+  width: 100%;
+}

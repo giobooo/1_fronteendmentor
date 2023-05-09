@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+@mixin body-s {
+  font-size: 0.875rem;
+  font-weight: normal;
+  line-height: 150%;
+}
+@mixin body-m-bold {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 150%;
+}
+@mixin body-m {
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 150%;
+}
+@mixin heading-xl {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 110%;
+}
+@mixin heading-l {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 110%;
+}
+@mixin heading-m {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 110%;
+}
+@mixin heading-s {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 110%;
+}
