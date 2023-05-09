@@ -18,7 +18,9 @@ function HeaderComponent() {
           />
         </svg>
         <div className="title">
-          <h1>Body Mass Index Calculator</h1>
+          <h1>
+            Body Mass <br /> Index Calculator
+          </h1>
           <p>
             Better understand your weight in relation to your height using our
             body mass index (BM) calculator. While BMI is not the sole

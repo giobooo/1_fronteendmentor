@@ -28,7 +28,8 @@ header {
   align-items: center;
   gap: 2rem;
   max-width: 72.5rem;
-  padding: 10.4375rem 2rem 0 2rem;
+  width: 100%;
+  padding-top: 10.4375rem;
 
   .logo {
     position: absolute;
@@ -37,7 +38,7 @@ header {
 
   .title {
     flex: 1 1;
-    padding-right: 6.25rem;
+    padding-right: 99px;
 
     h1 {
       @include heading-l;
