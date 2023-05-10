@@ -22,19 +22,23 @@
   font-size: 4rem;
   font-weight: 600;
   line-height: 110%;
+  letter-spacing: -0.05em;
 }
 @mixin heading-l {
   font-size: 3rem;
   font-weight: 600;
   line-height: 110%;
+  letter-spacing: -0.05em;
 }
 @mixin heading-m {
   font-size: 1.5rem;
   font-weight: 600;
   line-height: 110%;
+  letter-spacing: -0.05em;
 }
 @mixin heading-s {
   font-size: 1.25rem;
   font-weight: 600;
   line-height: 110%;
+  letter-spacing: -0.05em;
 }
