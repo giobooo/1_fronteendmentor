@@ -87,9 +87,9 @@
     {
       "name": "Newsletter sign-up form",
       "href": "./015_news-signup/dist/index.html",
-      "external": "https://www.frontendmentor.io/solutions/fylo-data-storage-with-progress-bar-animation-Xmv-raP0Ul",
-      "screenshot": "./013_fylo-data-storage/screenshot.jpg",
-      "date": "03/05/2023"
+      "external": "https://www.frontendmentor.io/solutions/newsletter-form-and-success-message-1J9r2Mubb6",
+      "screenshot": "./015_news-signup/screenshot.png",
+      "date": "09/06/2023"
     }
   ]
 }
