@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  background-color: hsl(235, 18%, 26%);
+  height: 100dvh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: hsl(234, 29%, 20%);
+}
+
+main {
+  margin: 0 2rem;
+  background-color: white;
+  box-shadow: 0px 0.9375rem 3.75rem rgba(0, 0, 0, 0.25);
+  border-radius: 2.25rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+@media screen and (max-width: 800px) {
+  main {
+    flex-direction: column-reverse;
+    margin: 0;
+    border-radius: 0;
+    height: 100%;
+  }
+}
+
+.form-container {
+  margin: 0 4rem;
+}
+@media screen and (max-width: 800px) {
+  .form-container {
+    margin: 0 1.5rem;
+  }
+}
+.form-container h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 3.5rem;
+  margin-bottom: 1.5rem;
+}
+@media screen and (max-width: 800px) {
+  .form-container h1 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+}
+.form-container p {
+  margin-bottom: 1.5rem;
+}
+.form-container ul {
+  list-style: none;
+  margin-bottom: 2.5rem;
+}
+.form-container li::before {
+  content: url("../assets/images/icon-list.svg");
+  height: 21px;
+  width: 21px;
+  margin-right: 1rem;
+  display: inline-block;
+}
+.form-container li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+@media screen and (max-width: 800px) {
+  .form-container li {
+    align-items: flex-start;
+  }
+}
+.form-container li:not(:last-child) {
+  margin-bottom: 0.625rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+form label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.125rem;
+  margin-bottom: 0.5rem;
+}
+form input {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 1rem 1.5rem;
+  border: 1px solid rgba(25, 24, 43, 0.25);
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+form button {
+  color: white;
+  background-color: hsl(234, 29%, 20%);
+  padding: 1rem;
+  font-weight: 700;
+  line-height: 24px;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+form button:hover {
+  background: linear-gradient(204.47deg, #ff6a3a 0%, #ff527b 100%);
+  box-shadow: 0px 16px 32px rgba(255, 97, 85, 0.5);
+}
+@media screen and (max-width: 800px) {
+  form button {
+    margin-bottom: 2.5rem;
+  }
+}
+
+.image-container {
+  margin: 1.5rem;
+}
+@media screen and (max-width: 800px) {
+  .image-container {
+    margin: 0 0 2.5rem 0;
+    width: 100%;
+  }
+}
+.image-container img {
+  display: block;
+}
+@media screen and (max-width: 800px) {
+  .image-container img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
