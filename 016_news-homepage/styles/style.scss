@@ -1,0 +1,125 @@
+@use "colors";
+@import "mixins.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  @include fs-Body;
+  color: colors.$p16-body-color;
+  background-color: #f2f2f2;
+  max-width: 69.375rem;
+  margin-inline: auto;
+  height: 100dvh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  @include fs-H_XL;
+  color: colors.$p16-dark-color;
+}
+h2 {
+  @include fs-H_L;
+  color: colors.$p16-alt-accent-color;
+}
+h3 {
+  @include fs-H_S;
+  color: colors.$p16-light-color;
+}
+h4 {
+  @include fs-H_XS;
+  color: colors.$p16-dark-color;
+}
+
+.top-bar {
+  margin-bottom: 3.4375rem;
+  display: block;
+  img {
+    float: left;
+  }
+  nav {
+    float: right;
+  }
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "latest-article latest-article other-news"
+    "latest-article latest-article other-news"
+    "top-3 top-3 top-3";
+}
+
+.latest-article {
+  grid-area: latest-article;
+  margin-right: 1.875rem;
+
+  .latest-article__img {
+    width: 100%;
+    margin-bottom: 1.75rem;
+  }
+
+  .latest-article__text-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1.875rem;
+
+    h1 {
+      flex: 1 1;
+    }
+
+    div {
+      flex: 1 1;
+
+      button {
+        margin-top: 1.875rem;
+        border: none;
+        background-color: colors.$p16-dark-color;
+        color: colors.$p16-light-color;
+        font-weight: 700;
+        font-size: 0.875rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.2734rem;
+        padding: 0.75rem 2.0625rem;
+      }
+    }
+  }
+}
+
+.other-news {
+  grid-area: other-news;
+  background-color: colors.$p16-dark-color;
+  display: flex;
+  flex-direction: column;
+  gap: 1.9375rem;
+  padding: 1.9375rem 1.5rem;
+
+  .new-article {
+    > p {
+      margin-top: 0.5rem;
+      color: colors.$p16-subtle-color;
+    }
+  }
+  .new-article:not(:last-child) {
+    border-bottom: 1px solid colors.$p16-body-color;
+    > p {
+      margin-bottom: 1.875rem;
+    }
+  }
+}
+
+.top-3 {
+  grid-area: top-3;
+}
