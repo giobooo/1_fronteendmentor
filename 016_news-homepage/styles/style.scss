@@ -12,9 +12,16 @@ body {
   @include fs-Body;
   color: colors.$p16-body-color;
   background-color: #f2f2f2;
-  max-width: 69.375rem;
+
+  margin-top: 5.5625rem;
+  width: min(100% - 3rem, 69.375rem);
   margin-inline: auto;
-  height: 100dvh;
+
+  @media screen and (max-width: 800px) {
+    width: min(100% - 2rem);
+    margin-top: 1.75rem;
+    overflow-x: hidden;
+  }
 }
 
 main {
@@ -25,30 +32,119 @@ main {
 h1 {
   @include fs-H_XL;
   color: colors.$p16-dark-color;
+  @media screen and (max-width: 800px) {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
 }
 h2 {
   @include fs-H_L;
   color: colors.$p16-alt-accent-color;
+  @media screen and (max-width: 800px) {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
 }
 h3 {
   @include fs-H_S;
   color: colors.$p16-light-color;
+  cursor: pointer;
+  &:hover {
+    color: colors.$p16-alt-accent-color;
+  }
 }
 h4 {
   @include fs-H_XS;
   color: colors.$p16-dark-color;
 }
 
+a {
+  text-decoration: none;
+  color: colors.$p16-body-color;
+  &:hover {
+    color: colors.$p16-accent-color;
+  }
+  margin-left: 2.5rem;
+}
+
+// Header --------------------------------------------
+
 .top-bar {
   margin-bottom: 3.4375rem;
-  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
   img {
-    float: left;
   }
   nav {
-    float: right;
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
+  }
+  .menu-button {
+    border: none;
+    z-index: 11;
+
+    @media screen and (min-width: 800px) {
+      display: none;
+    }
   }
 }
+
+// Mobile Menu -----------------------------------------
+
+.mobile-menu-wrapper {
+  position: absolute;
+  inset: 0;
+  background-color: hsla(240, 100%, 5%, 0);
+  transition: all 0.5s ease-in-out;
+
+  @media screen and (min-width: 800px) {
+    display: none;
+  }
+}
+
+.mobile-menu {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  left: 100%;
+  height: 100dvh;
+  background-color: #f2f2f2;
+  padding-top: 9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  transition: all 0.5s ease-in-out;
+
+  > a {
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    color: colors.$p16-dark-color;
+    &:hover {
+      color: colors.$p16-accent-color;
+    }
+  }
+}
+
+.menu-open {
+  left: 32%;
+}
+.menu-closed {
+  left: 100%;
+}
+.wrapper-menu-open {
+  background-color: hsla(240, 100%, 5%, 0.5);
+}
+.wrapper-menu-closed {
+  background-color: hsla(240, 100%, 5%, 0);
+}
+
+// Grid -----------------------------------------------
 
 .main-grid {
   display: grid;
@@ -60,11 +156,25 @@ h4 {
     "latest-article latest-article other-news"
     "latest-article latest-article other-news"
     "top-3 top-3 top-3";
+
+  @media screen and (max-width: 800px) {
+    grid-template-areas:
+      "latest-article latest-article latest-article"
+      "other-news other-news other-news"
+      "top-3 top-3 top-3";
+  }
 }
+
+// Latest Article --------------------------------------
 
 .latest-article {
   grid-area: latest-article;
   margin-right: 1.875rem;
+
+  @media screen and (max-width: 800px) {
+    margin-bottom: 4rem;
+    margin-right: 0;
+  }
 
   .latest-article__img {
     width: 100%;
@@ -76,6 +186,10 @@ h4 {
     flex-direction: row;
     gap: 1.875rem;
 
+    @media screen and (max-width: 800px) {
+      flex-direction: column;
+    }
+
     h1 {
       flex: 1 1;
     }
@@ -86,17 +200,23 @@ h4 {
       button {
         margin-top: 1.875rem;
         border: none;
-        background-color: colors.$p16-dark-color;
+        background-color: colors.$p16-accent-color;
         color: colors.$p16-light-color;
         font-weight: 700;
         font-size: 0.875rem;
         line-height: 1.5rem;
         letter-spacing: 0.2734rem;
         padding: 0.75rem 2.0625rem;
+        cursor: pointer;
+        &:hover {
+          background-color: colors.$p16-dark-color;
+        }
       }
     }
   }
 }
+
+// News List Right Panel ---------------------------------------
 
 .other-news {
   grid-area: other-news;
@@ -120,6 +240,44 @@ h4 {
   }
 }
 
+// Top 3 News --------------------------------------------------
+
 .top-3 {
   grid-area: top-3;
+  margin-top: 4.4375rem;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+    margin-top: 4rem;
+  }
+
+  .top-3__element {
+    flex: 1 1;
+    display: flex;
+    flex-direction: row;
+    gap: 1.875rem;
+
+    img {
+      width: 6.25rem;
+      height: max-content;
+    }
+
+    span {
+      font-weight: 700;
+      font-size: 2rem;
+      line-height: 2rem;
+      color: colors.$p16-subtle-color;
+    }
+    h4 {
+      margin-bottom: 0.5625rem;
+      margin-top: 0.75rem;
+      cursor: pointer;
+      &:hover {
+        color: colors.$p16-accent-color;
+      }
+    }
+  }
 }
