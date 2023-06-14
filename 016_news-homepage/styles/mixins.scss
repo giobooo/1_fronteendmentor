@@ -1,0 +1,35 @@
+@mixin fs-Body {
+  font-weight: 400;
+  font-size: 0.9375rem;
+  line-height: 1.625rem;
+}
+
+@mixin fs-H_XS {
+  font-weight: 800;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+
+@mixin fs-H_S {
+  font-weight: 800;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+
+@mixin fs-H_M {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+@mixin fs-H_L {
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+}
+
+@mixin fs-H_XL {
+  font-weight: 800;
+  font-size: 3.5rem;
+  line-height: 3.5rem;
+}
