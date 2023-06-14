@@ -76,10 +76,11 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  background-color: #fffdfa;
 
   img {
   }
-  nav {
+  .desktop-menu {
     @media screen and (max-width: 800px) {
       display: none;
     }
@@ -145,6 +146,10 @@ a {
 }
 .wrapper-menu-closed {
   background-color: hsla(240, 100%, 5%, 0);
+}
+.wrapper-menu-open + button {
+  position: fixed;
+  right: 1rem;
 }
 
 // Grid -----------------------------------------------
