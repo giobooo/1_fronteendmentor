@@ -11,7 +11,7 @@ body {
   font-family: "Inter", sans-serif;
   @include fs-Body;
   color: colors.$p16-body-color;
-  background-color: #f2f2f2;
+  background-color: #fffdfa;
 
   margin-top: 5.5625rem;
   width: min(100% - 3rem, 69.375rem);
