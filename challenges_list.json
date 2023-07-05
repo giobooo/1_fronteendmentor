@@ -97,6 +97,13 @@
       "external": "https://www.frontendmentor.io/solutions/responsive-news-homepage-with-working-menu-5mdxKsyuhz",
       "screenshot": "./016_news-homepage/screenshot.png",
       "date": "14/06/2023"
+    },
+    {
+      "name": "Results Summary",
+      "href": "./018_results-summary/index.html",
+      "external": "https://www.frontendmentor.io/solutions/responsive-news-homepage-with-working-menu-5mdxKsyuhz",
+      "screenshot": "./018_results-summary/screenshot.png",
+      "date": "05/07/2023"
     }
   ]
 }
