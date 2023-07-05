@@ -35,7 +35,7 @@ body {
 main {
   height: 100dvh;
   margin: auto;
-  background-color: var(--paleblue);
+  background-color: #ecf2ff;
   display: grid;
   place-items: center;
 }
@@ -114,6 +114,7 @@ h3 {
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 1.75rem;
+  text-align: left;
 }
 
 .details-container {
@@ -201,8 +202,12 @@ button {
   border-radius: 8rem;
   padding: 1rem;
   border: none;
-  font-weight: 700;
   cursor: pointer;
+  font-size: 1.125rem;
+  font-family: Hanken Grotesk;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 button:hover {
   background: linear-gradient(180deg, #75f 0%, #6943ff 0.01%, #2f2ce9 100%);
@@ -237,9 +242,6 @@ button:hover {
   }
   .value-container__value {
     font-size: 3.75rem;
-  }
-  h3 {
-    text-align: left;
   }
   button {
     margin-top: 1.5rem;
